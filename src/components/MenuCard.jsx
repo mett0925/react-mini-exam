@@ -5,7 +5,7 @@ const MenuCard = ({ id, emoji, name, votes, isTop, onVote }) => {
       <div className="card__name">{name}</div>
       <div className="card__votes">{votes}표</div>
       <button type="button" className="card__btn" onClick={() => onVote(id)}>
-        투표
+        투표하기
       </button>
     </li>
   );
