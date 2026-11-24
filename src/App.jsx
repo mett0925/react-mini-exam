@@ -14,7 +14,7 @@ function App() {
   const addMenu = (name) => {
     setMenus((prev) => [
       ...prev,
-      { id: Date.now(), emoji: "🍽️", name, votes: 0 },
+      { id: Date.now(), emoji: "☕", name, votes: 0 },
     ]);
   };
 
@@ -30,7 +30,7 @@ function App() {
 
   return (
     <div className="app">
-      <Header title={"🍱 오늘 점심 뭐 먹지?"} totalVotes={totalVotes} />
+      <Header title={"☕ 오늘 커피 뭐 마시지?"} totalVotes={totalVotes} />
       <AddMenu onAdd={addMenu} />
       <ul className="menus">
         {menus.map((m) => (
